@@ -1,0 +1,4 @@
+Hello, ${firstName} ${lastName}!
+
+HTML tag should be escaped:
+${htmlText}
