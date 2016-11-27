@@ -6,12 +6,14 @@ lazy val commonSettings = Seq(
 
 lazy val versions = new {
   val scalate = "1.8.0"
+  val freemarker = "2.3.25-incubating"
 }
 
 lazy val root = (project in file(".")).
   settings(commonSettings:_*).
   settings(
     libraryDependencies ++= Seq(
-      "org.scalatra.scalate" %% "scalate-core" % versions.scalate
+      "org.scalatra.scalate" %% "scalate-core" % versions.scalate,
+      "org.freemarker" % "freemarker" % versions.freemarker
     )
   )
